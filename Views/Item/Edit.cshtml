@@ -1,0 +1,37 @@
+﻿@model GenericCrudMVC.Models.Item;
+@{
+    ViewData["Title"] = "Edit item";
+}
+
+<h1>Editing</h1>
+
+<h4>Item - @Model.ID</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-3">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+            </div>
+
+            <div class="offset-sm-3 col-sm-6 d-grid">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a class="btn btn-danger" asp-action="Index">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

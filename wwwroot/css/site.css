@@ -1,0 +1,68 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.btn-green {
+    background: linear-gradient(#13bf3e, #13bf3e) bottom / 0 0.125rem no-repeat;
+    transition: all 0.25s ease-in-out;
+    padding-bottom: 0.125rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    padding: 0.125rem;
+    color: #000000;
+}
+
+.btn-green:hover {
+    background-size: 100% 0.125rem;
+    color: #13bf3e;
+}
+
+.btn-red {
+    background: linear-gradient(#cc1442, #cc1442) bottom / 0 0.125rem no-repeat;
+    transition: all 0.25s ease-in-out;
+    padding-bottom: 0.125rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    padding: 0.125rem;
+    color: #000000;
+}
+
+.btn-red:hover {
+    background-size: 100% 0.125rem;
+    color: #cc1442;
+}
+
+.btn-yellow {
+    background: linear-gradient(#e6bf00, #e6bf00) bottom / 0 0.125rem no-repeat;
+    transition: all 0.25s ease-in-out;
+    padding-bottom: 0.125rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: #000000;
+}
+
+.btn-yellow:hover {
+    background-size: 100% 0.125rem;
+    color: #e6bf00;
+}

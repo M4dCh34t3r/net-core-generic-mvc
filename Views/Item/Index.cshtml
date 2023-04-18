@@ -1,0 +1,31 @@
+﻿@model IEnumerable<GenericCrudMVC.Models.Item>
+@{
+	ViewData["Title"] = "Please confirm";
+}
+
+<br />
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Description</th>
+			<td>
+				<a class="btn-green" href="/Item/Create">ADD ITEM</a>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model) {
+			<tr>
+				<td>@item.ID</td>
+				<td>@item.Name</td>
+				<td>@item.Description</td>
+				<td>
+					<a class="btn-yellow" href="/Item/Edit?id=@item.ID">Edit</a>
+					<a class="btn-red" href="/Item/Delete?id=@item.ID">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
